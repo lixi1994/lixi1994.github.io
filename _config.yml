@@ -1,25 +1,25 @@
 # Site settings
-title: Pointing to the Moon
-description: Blog of Yingkai Liu
+title: test
+description: GitHub of Xi Li
 baseurl: "" 
-url: "https://yk-liu.github.io" 
+url: "https://lixi1994.github.io" 
 
 # GitHub User settings
-username: Yingkai Liu
-github_username: yk-liu
-user_description: A Physics undergrad with a broad interest
-user_title: Physics Undergraduate
-email: yingkai.liu@outlook.com
+username: Xi Li
+github_username: lixi1994
+user_description: A PhD candidate in Computer Science at Penn State
+user_title: PhD candidate in Computer Science
+email: lee.xi.1994@gmail.com
 
 # Blog Author settings
 author:
-  name:           Yingkai Liu
+  name:           Xi Li
   picture:        
-  email:          yingkai.liu@outlook.com
-  description:    I'm a Physics undergrad with a broad interest.
+  email:          lee.xi.1994@gmail.com
+  description:    A PhD candidate in Computer Science at Penn State
   twitter:
   facebook:
-  github:         https://github.com/yk-liu
+  github:         https://github.com/lixi1994
   linkedin:
 
 
