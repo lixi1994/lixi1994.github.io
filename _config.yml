@@ -1,7 +1,7 @@
 source: .
 destination: ./_site
 includes: ./_includes
-baseurl: ""  # Leave this empty for User/Organization sites
+baseurl: "/lixi1994.github.io"
 
 collections:
   projects:
@@ -15,7 +15,7 @@ data:
 # source: .
 # destination: ./_site
 # includes: ./_includes
-# baseurl: /XiLi
+# baseurl: /XiLi  "/lixi1994.github.io"
 
 # collections:
 #   projects:
