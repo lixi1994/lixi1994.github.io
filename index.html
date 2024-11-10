@@ -1,0 +1,276 @@
+---
+layout: default
+title: Home
+---
+<!-- ========== About ========== -->
+<div class="docs-section" id="about">
+  <h4>About</h4>
+  <p>
+  I am an Assistant Professor in the Department of Computer Science at the University of Alabama at Birmingham (UAB). 
+  I received my Ph.D. in Computer Science from Penn State University under the guidance of Dr. George Kesidis and Dr. David Miller, with a dissertation focused on poisoning attacks and defenses for machine learning models. 
+  I obtained my M.S. degree in Computer Science from Penn State University in 2018 and my B.S. degree from the School of Information Science and Engineering at Southeast University in Nanjing, China, in 2016.
+  </p>
+
+  <p><strong>Research Interests:</strong> My research broadly focuses on <strong>trustworthy AI</strong>. Recently, we have been exploring the following topics:</p>
+  <ul style="margin-left: 30px;">
+    <li>Robustness of large language/vision/multi-modal models</li>
+    <li>Machine learning for IoT security and cybersecurity</li>
+    <li>Trustworthy AI + X (e.g., education and healthcare)</li>
+  </ul>
+
+  <p>
+    Check my resume <a href="assets/cv/XiLi.pdf" target="_blank">here</a>.
+  </p>
+
+</div>
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
+  <sup>‡</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="docs-section" id="students">  
+  <h4>Students</h4>
+  <p>
+    <b>I’m looking for highly motivated PhD students to join my research group starting in Fall 2025 at CS@UAB.</b> 
+    Please check <a href="{{ '/assets/recruitment/recruitment_en.html' | prepend: site.baseurl }}" target="_blank">Recruitment</a>.
+
+    If you are interested, please apply to the 
+    <a href="https://www.uab.edu/cas/computerscience/graduate-programs/doctoral-program/doctoral-admissions" target="_blank">CS PhD program</a> and mention my name in your application. 
+    Additionally, send your CV and transcript to 
+    <a href="mailto:xili.recruitment@gmail.com">this email</a> with the subject <b>[25Fall PhD Application]</b>.
+  </p>
+  <!-- <p>If you have any questions, feel free to reach out.</p> -->
+  
+</div>
+
+<!-- ========== Teaching ========== -->
+<div class="docs-section" id="teaching">
+  <h4>Teaching</h4>
+  <!-- Instructor Experience -->
+  <p><strong>Instructor</strong> <span style="float: right;">UAB</span><br/></p>
+  <ul style="list-style-type: none; margin-left: 20px;">
+    <li><a href="{{ '/assets/teaching/Algo.html' | prepend: site.baseurl }}" target="_blank">CS652/752 Advanced Algorithms and Applications</a><span style="float: right;">2025 Spring</span><br/></li>
+    <li><a href="{{ '/assets/teaching/FDS.html' | prepend: site.baseurl }}" target="_blank">CS685/785 Foundation of Data Science</a><span style="float: right;">2024 Fall</span></li>
+  </ul>
+  <!-- Teaching Assistant Experience -->
+  <p><strong>Teaching Assistant</strong> <span style="float: right;">PSU</span><br/></p>
+  <ul style="list-style-type: none; margin-left: 20px;">
+    <li>CMPSC465 Data Structures and Algorithms <span style="float: right;">2021 Spring</span><br/></li>
+    <li>CMPSC/MATH 451 Numerical Computations <span style="float: right;">2019 Fall - 2024 Spring</span><br/></li>
+    <li>CMPEN/EE 455 Digital Image Processing I <span style="float: right;">2018 Fall</span></li>
+  </ul>
+</div>
+
+<!-- ========== Service ========== -->
+<div class="docs-section" id="service">
+  <h4>Service</h4>
+
+  <!-- Conference Program Committee -->
+  <p><strong>Conference Program Committee:</strong></p>
+  <ul style="list-style-type: none; margin-left: 20px;">
+    <li>Association for the Advancement of Artificial Intelligence (AAAI), 2025</li>
+    <li>SIAM International Conference on Data Mining (SDM), 2024</li>
+  </ul>
+
+  <!-- Conference Reviewer -->
+  <p><strong>Conference Reviewer:</strong></p>
+  <ul style="list-style-type: none; margin-left: 30px;">
+    <li>Artificial Intelligence and Statistics (AISTATS), 2025</li>
+    <li>Association for the Advancement of Artificial Intelligence (AAAI), 2025</li>
+    <li>International Conference on Learning Representations (ICLR), 2025</li>
+    <li>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2022-2025</li>
+    <li>SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023, 2024</li>
+    <li>IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2024, 2025</li>
+    <li>Conference on Neural Information Processing Systems (NeurIPS), 2024</li>
+    <li>Conference on Language Modeling (COLM), 2024</li>
+  </ul>
+
+  <!-- Journal Reviewer -->
+  <p><strong>Journal Reviewer:</strong></p>
+  <ul style="list-style-type: none; margin-left: 30px;">
+    <li>Computers and Security (C&S), 2024</li>
+    <li>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024</li>
+  </ul>
+
+  <!-- Student Volunteer -->
+  <p><strong>Student Volunteer:</strong></p>
+  <ul style="list-style-type: none; margin-left: 30px;">
+    <li>Conference on Neural Information Processing Systems (NeurIPS), 2023</li>
+  </ul>
+</div>
+
+
+<!-- ========== PROJECTS ========== 
+<div class="docs-section" id="projects">
+  <h4>Projects</h4>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
+    <li><div class="button" data-ref="#projects-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="projects-selected">
+      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
+      {% for project in selected_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="projects-all">
+      {% for project in site.data.projects.projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+-->
+
+
+<!-- <div class="docs-section" id="template">
+  <h4>Website Design</h4>
+  Since I made this website, many people have found this Jekyll template useful [
+  {% for template_user in site.data.template_users.template_users %}
+  <a href="{{ template_user }}" target="_blank">{{ forloop.index }}</a>{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+  ].
+  You can find all the code needed to build your website in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
+  Feel free to use it. <br/>
+
+  If you end up using it, please link to here and drop me an email.
+  I'm always happy to see people using it.
+</div>   -->

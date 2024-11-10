@@ -1,0 +1,100 @@
+papers:
+
+  - title: "AAAR-1.0: Assessing AI's Potential to Assist Research"
+    authors: "R. Lou, H. Xu, S. Wang, J. Du, R. Kamoi, X. Lu, J. Xie, Y. Sun, Y. Zhang, J. J. Ahn, H. Fang, Z. Zou, W. Ma, <b>X. Li</b>, K. Zhang, C. Xia, L. Huang, W. Yin"
+    venue: "Under review"
+    paper_pdf: "/assets/publications/2024_arXiv_AAAR/paper.pdf"
+    selected: n
+
+  - title: "Securing Federated Learning Against Novel and Classic Backdoor Threats During Foundation Model Integration"
+    authors: "X. Bi, <b>X. Li</b>"
+    venue: "Under review"
+    paper_pdf: "/assets/publications/2024_arXiv_FMFL_backdoor_defense/paper.pdf"
+    selected: y
+
+  - title: "Chain-of-Scrutiny: Detecting Backdoor Attacks for Large Language Models"
+    authors: "<b>X. Li</b>, Y. Zhang, R. Lou, C. Wu, J. Wang"
+    venue: "Under review"
+    paper_pdf: "/assets/publications/2024_arXiv_CoS/paper.pdf"
+    selected: y
+
+  - title: "Position Paper: Assessing Robustness, Privacy, and Fairness in Federated Learning Integrated with Foundation Models"
+    authors: "<b>X. Li</b>, J. Wang"
+    venue: "Under review"
+    paper_pdf: "/assets/publications/2024_arXiv_FMFL_position_paper/paper.pdf"
+    selected: y
+
+  - title: "CEPA: Consensus Embedded Perturbation for Agnostic Detection and Inversion of Backdoors"
+    authors: "G. Yang, <b>X. Li</b>, H. Wang, D. J. Miller, G. Kesidis"
+    venue: "Under review"
+    # paper_pdf: "/assets/publications/2024_arXiv_CEPA/paper.pdf"
+    selected: n
+
+  - title: "Vulnerabilities of Foundation Model Integrated Federated Learning Systems Under Adversarial Threats"
+    authors: "<b>X. Li</b>, C. Wu, J. Wang"
+    venue: "Under review"
+    paper_pdf: "/assets/publications/2024_arXiv_FMFL_vulnerabilities/paper.pdf"
+    selected: n
+
+  - title: "Backdoor Mitigation by Correcting Distribution of Neural Activation"
+    authors: "<b>X. Li</b>, Z. Xiang, D. J. Miller, G. Kesidis"
+    venue: "Neurocomputing, 2024"
+    paper_pdf: "/assets/publications/2024_Neurocomputing_backdoor_mitigation/paper.pdf"
+    selected: y
+
+  - title: "BIC-based Mixture Model Defense against Data Poisoning Attacks on Classifiers: A Comprehensive Study"
+    authors: "<b>X. Li</b>, D. J. Miller, Z. Xiang, G. Kesidis"
+    venue: "IEEE Transactions on Knowledge and Data Engineering (TKDE), 2024"
+    paper_pdf: "/assets/publications/2024_TKDE_BIC_defense/paper.pdf"
+    code: "https://github.com/lixi1994/BIC-MMD"
+    selected: y
+
+  - title: "Unveiling Backdoor Risks Brought by Foundation Models in Heterogeneous Federated Learning"
+    authors: "<b>X. Li</b>, C. Wu, J. Wang"
+    venue: "The Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), 2024"
+    paper_pdf: "/assets/publications/2024_PAKDD_HFL_backdoor/paper.pdf"
+    poster: "/assets/publications/2024_PAKDD_HFL_backdoor/poster.pdf"
+    code: "https://github.com/lixi1994/backdoor_FM_hete_FL"
+    selected: y
+
+  - title: "Temporal-Distributed Backdoor Attack Against Video-Based Action Recognition"
+    authors: "<b>X. Li</b>, S. Wang, R. Huang, M. Gowda, G. Kesidis"
+    venue: "AAAI, 2024"
+    paper_pdf: "/assets/publications/2024_AAAI_video_backdoor/paper.pdf"
+    poster: "/assets/publications/2024_AAAI_video_backdoor/poster.pdf"
+    code: "https://github.com/lixi1994/Temporal-Distributed-Backdoor-Attack-Against-Video-Based-Action-Recognition"
+    selected: y
+
+  - title: "Backdoor Threats from Compromised Foundation Models to Federated Learning"
+    authors: "<b>X. Li</b>, S. Wang, C. Wu, H. Zhou, J. Wang"
+    venue: "FL@FM-NeurIPS'23"
+    paper_pdf: "/assets/publications/2023_NeurIPS_FMFL_backdoor/paper.pdf"
+    poster: "/assets/publications/2023_NeurIPS_FMFL_backdoor/poster.pdf"
+    code: "https://github.com/lixi1994/backdoor_FM_FL"
+    selected: y
+
+  - title: "A BIC-based Mixture Model Defense against Data Poisoning Attacks on Classifiers"
+    authors: "<b>X. Li</b>, D. J. Miller, Z. Xiang, G. Kesidis"
+    venue: "IEEE International Workshop on Machine Learning for Signal Processing (MLSP), 2023"
+    paper_pdf: "/assets/publications/2023_MLSP_BIC_defense/paper.pdf"
+    selected: y
+
+  - title: "Test-Time Detection of Backdoor Triggers of Poisoned Deep Neural Networks"
+    authors: "<b>X. Li</b>, D. J. Miller, Z. Xiang, G. Kesidis"
+    venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2022"
+    paper_pdf: "/assets/publications/2022_ICASSP_test_time_backdoor_dection/paper.pdf"
+    poster: "/assets/publications/2022_ICASSP_test_time_backdoor_dection/poster.pdf"
+    selected: y
+
+  - title: "Detecting Backdoor Attacks Against Point Cloud Classifiers"
+    authors: "Z. Xiang, D. J. Miller, S. Chen, <b>X. Li</b>, G. Kesidis"
+    venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2022"
+    paper_pdf: "/assets/publications/2022_ICASSP_pointcloud_backdoor_dection/paper.pdf"
+    selected: y
+
+  - title: "A Backdoor Attack against 3D Point Cloud Classifiers"
+    authors: "Z. Xiang, D. J. Miller, S. Chen, <b>X. Li</b>, G. Kesidis"
+    venue: "ICCV, 2021"
+    paper_pdf: "/assets/publications/2021_ICCV_pointcloud_backdoor/paper.pdf"
+    selected: y
+
