@@ -1,7 +1,7 @@
 source: .
 destination: _site
 includes_dir: _includes
-baseurl: "/lixi1994.github.io"
+baseurl: ""
 
 # Explicitly include the `_data` directory if needed
 include:
