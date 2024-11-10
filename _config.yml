@@ -1,22 +1,27 @@
-# source:      .
+source: .
+destination: ./_site
+includes: ./_includes
+baseurl: ""  # Leave this empty for User/Organization sites
+
+collections:
+  projects:
+    output: true
+
+url: "https://lixi1994.github.io"
+data:
+  main_info:
+    name: "Xi Li"
+
+# source: .
 # destination: ./_site
-# includes:    ./_includes
+# includes: ./_includes
 # baseurl: /XiLi
 
 # collections:
 #   projects:
 #     output: true
 
-source: .
-destination: ./_site
-includes: ./_includes
-baseurl: /XiLi
-
-collections:
-  projects:
-    output: true
-
-url: "https://lixi1994.github.io/"
-data:
-  main_info:
-    name: "Xi Li"
+# url: "https://lixi1994.github.io/"
+# data:
+#   main_info:
+#     name: "Xi Li"
