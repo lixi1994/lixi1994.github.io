@@ -1,16 +1,18 @@
 source: .
-destination: ./_site
-includes: ./_includes
+destination: _site
+includes_dir: _includes
 baseurl: "/lixi1994.github.io"
+
+# Explicitly include the `_data` directory if needed
+include:
+  - _data
+
+# Set the URL for GitHub Pages
+url: "https://lixi1994.github.io"
 
 collections:
   projects:
     output: true
-
-url: "https://lixi1994.github.io"
-data:
-  main_info:
-    name: "Xi Li"
 
 # source: .
 # destination: ./_site
