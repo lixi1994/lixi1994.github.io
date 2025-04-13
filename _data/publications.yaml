@@ -37,7 +37,7 @@ papers:
 
   - title: "Vulnerabilities of Foundation Model Integrated Federated Learning Systems Under Adversarial Threats"
     authors: "<b>Xi Li</b>, Chen Wu, Jiaqi Wang"
-    venue: "Under review"
+    venue: "IJCNN, 2025"
     paper_pdf: "/assets/publications/2024_arXiv_FMFL_vulnerabilities/paper.pdf"
     selected: n
 
