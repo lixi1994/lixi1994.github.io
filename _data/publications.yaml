@@ -35,11 +35,11 @@ papers:
     # paper_pdf: "/assets/publications/2024_arXiv_CEPA/paper.pdf"
     selected: n
 
-  - title: "Vulnerabilities of Foundation Model Integrated Federated Learning Systems Under Adversarial Threats"
+  - title: "Foundation Models in Federated Learning: Assessing Backdoor Vulnerabilities"
     authors: "<b>Xi Li</b>, Chen Wu, Jiaqi Wang"
     venue: "IJCNN, 2025"
-    paper_pdf: "/assets/publications/2024_arXiv_FMFL_vulnerabilities/paper.pdf"
-    selected: n
+    paper_pdf: "/assets/publications/2025_IJCNN_FMFL_BD/paper.pdf"
+    selected: y
 
   - title: "Backdoor Mitigation by Correcting Distribution of Neural Activation"
     authors: "<b>Xi Li</b>, Zhen Xiang, David Miller, George Kesidis"
@@ -60,7 +60,7 @@ papers:
     paper_pdf: "/assets/publications/2024_PAKDD_HFL_backdoor/paper.pdf"
     poster: "/assets/publications/2024_PAKDD_HFL_backdoor/poster.pdf"
     code: "https://github.com/lixi1994/backdoor_FM_hete_FL"
-    selected: y
+    selected: n
 
   - title: "Temporal-Distributed Backdoor Attack Against Video-Based Action Recognition"
     authors: "<b>Xi Li</b>, Songhe Wang, Ruiquan Huang, Mahanth Gowda, George Kesidis"
@@ -82,7 +82,7 @@ papers:
     authors: "<b>Xi Li</b>, David Miller, Zhen Xiang, George Kesidis"
     venue: "MLSP, 2023"
     paper_pdf: "/assets/publications/2023_MLSP_BIC_defense/paper.pdf"
-    selected: y
+    selected: n
 
   - title: "Test-Time Detection of Backdoor Triggers of Poisoned Deep Neural Networks"
     authors: "<b>Xi Li</b>, David Miller, Zhen Xiang, George Kesidis"
@@ -95,7 +95,7 @@ papers:
     authors: "Zhen Xiang, David Miller, Siheng Chen, <b>Xi Li</b>, George Kesidis"
     venue: "ICASSP, 2022"
     paper_pdf: "/assets/publications/2022_ICASSP_pointcloud_backdoor_dection/paper.pdf"
-    selected: y
+    selected: n
 
   - title: "A Backdoor Attack against 3D Point Cloud Classifiers"
     authors: "Zhen Xiang, David Miller, Siheng Chen, <b>Xi Li</b>, George Kesidis"
