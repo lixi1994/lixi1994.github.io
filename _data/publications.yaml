@@ -1,8 +1,15 @@
 papers:
+  - title: "Towards Safe Multi-Modal Learning: Unique Challenges and Future Directions"
+    authors: "<b>Xi Li</b>, Manling Li, Muchao Ye"
+    venue: "ICCV Tutorial, 2025"
+    paper_pdf: "/assets/publications/2025_ICCV_tutorial/paper.pdf"
+    selected: y
+
   - title: "Exploitation and Mitigation: Understanding Large-Scale Machine Learning Robustness under Paradigm Shift"
     authors: "<b>Xi Li</b>, Ruixiang Tang, Muchao Ye"
     venue: "SDM Tutorial, 2025"
     paper_pdf: "/assets/publications/2025_SDM_tutorial/paper.pdf"
+    slides: "/assets/publications/2025_SDM_tutorial/slides.pdf"
     selected: y
 
   - title: "AAAR-1.0: Assessing AI's Potential to Assist Research"
