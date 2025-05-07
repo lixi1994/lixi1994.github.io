@@ -12,9 +12,9 @@ papers:
     slides: "/assets/publications/2025_SDM_tutorial/slides.pdf"
     selected: y
 
-  - title: "AAAR-1.0: Assessing AI's Potential to Assist Research"
+  - title: "AAAR-1.0: Assessing AI’s Potential to Assist Research"
     authors: "Renze Lou, Hanzi Xu, Sijia Wang, Jiangshu Du, Ryo Kamoi, Xiaoxin Lu, Jian Xie, Yuxuan Sun, Yusen Zhang, Jihyun Janice Ahn, Hongchao Fang, Zhuoyang Zou, Wenchao Ma, <b>Xi Li</b>, Kai Zhang, Congying Xia, Lifu Huang, Wenpeng Yin"
-    venue: "Under review"
+    venue: "ICML, 2025"
     paper_pdf: "/assets/publications/2024_arXiv_AAAR/paper.pdf"
     selected: n
 
