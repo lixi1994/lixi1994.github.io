@@ -12,23 +12,29 @@ papers:
     slides: "/assets/publications/2025_SDM_tutorial/slides.pdf"
     selected: y
 
+  - title: "Chain-of-Scrutiny: Detecting Backdoor Attacks for Large Language Models"
+    authors: "<b>Xi Li</b>, Ruofan Mao, Yusen Zhang, Renze Lou, Chen Wu, Jiaqi Wang"
+    venue: "ACL findings 2025"
+    paper_pdf: "/assets/publications/2025_ACL_CoS/paper.pdf"
+    selected: y
+
   - title: "AAAR-1.0: Assessing AI’s Potential to Assist Research"
     authors: "Renze Lou, Hanzi Xu, Sijia Wang, Jiangshu Du, Ryo Kamoi, Xiaoxin Lu, Jian Xie, Yuxuan Sun, Yusen Zhang, Jihyun Janice Ahn, Hongchao Fang, Zhuoyang Zou, Wenchao Ma, <b>Xi Li</b>, Kai Zhang, Congying Xia, Lifu Huang, Wenpeng Yin"
     venue: "ICML, 2025"
     paper_pdf: "/assets/publications/2024_arXiv_AAAR/paper.pdf"
     selected: n
 
+  - title: "PeerGuard: Defending Multi-Agent Systems Against Backdoor Attacks Through Mutual Reasoning"
+    authors: "Falong Fan, <b>Xi Li</b>"
+    venue: "IEEE IRI 2025"
+    paper_pdf: "/assets/publications/2025_IRI_multi_agent_defense/paper.pdf"
+    selected: y
+
   - title: "Securing Federated Learning Against Novel and Classic Backdoor Threats During Foundation Model Integration"
     authors: "Xiaohuan Bi, <b>Xi Li</b>"
-    venue: "Under review"
-    paper_pdf: "/assets/publications/2024_arXiv_FMFL_backdoor_defense/paper.pdf"
+    venue: "IEEE IRI 2025"
+    paper_pdf: "/assets/publications/2025_IRI_FMFL_backdoor_defense/paper.pdf"
     selected: n
-
-  - title: "Chain-of-Scrutiny: Detecting Backdoor Attacks for Large Language Models"
-    authors: "<b>Xi Li</b>, Yusen Zhang, Renze Lou, Chen Wu, Jiaqi Wang"
-    venue: "Under review"
-    paper_pdf: "/assets/publications/2024_arXiv_CoS/paper.pdf"
-    selected: y
 
   - title: "Position Paper: Assessing Robustness, Privacy, and Fairness in Federated Learning Integrated with Foundation Models"
     authors: "<b>Xi Li</b>, Jiaqi Wang"
