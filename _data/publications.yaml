@@ -14,32 +14,44 @@ papers:
 
   - title: "Chain-of-Scrutiny: Detecting Backdoor Attacks for Large Language Models"
     authors: "<b>Xi Li</b>, Ruofan Mao, Yusen Zhang, Renze Lou, Chen Wu, Jiaqi Wang"
-    venue: "ACL findings 2025"
-    paper_pdf: "/assets/publications/2025_ACL_CoS/paper.pdf"
+    venue: "ACL(Findings) 2025"
+    paper_pdf: "https://arxiv.org/abs/2406.05948"
+    selected: y
+
+  - title: "NeuroGen: Neural Network Parameter Generation via Large Language Models"
+    authors: "Jiaqi Wang, Yusen Zhang, <b>Xi Li</b>"
+    venue: "Under review"
+    paper_pdf: "https://arxiv.org/abs/2505.12470"
     selected: y
 
   - title: "AAAR-1.0: Assessing AI’s Potential to Assist Research"
     authors: "Renze Lou, Hanzi Xu, Sijia Wang, Jiangshu Du, Ryo Kamoi, Xiaoxin Lu, Jian Xie, Yuxuan Sun, Yusen Zhang, Jihyun Janice Ahn, Hongchao Fang, Zhuoyang Zou, Wenchao Ma, <b>Xi Li</b>, Kai Zhang, Congying Xia, Lifu Huang, Wenpeng Yin"
     venue: "ICML, 2025"
-    paper_pdf: "/assets/publications/2024_arXiv_AAAR/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2410.22394"
+    selected: n
+
+  - title: "Mitigating Image Captioning Hallucinations in Vision-Language Models"
+    authors: "Fei Zhao, Chengcui Zhang, Runlin Zhang, Tianyang Wang, <b>Xi Li</b>"
+    venue: "IEEE MIPR, 2025"
+    paper_pdf: "https://arxiv.org/abs/2505.03420"
     selected: n
 
   - title: "PeerGuard: Defending Multi-Agent Systems Against Backdoor Attacks Through Mutual Reasoning"
     authors: "Falong Fan, <b>Xi Li</b>"
     venue: "IEEE IRI 2025"
-    paper_pdf: "/assets/publications/2025_IRI_multi_agent_defense/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2505.11642"
     selected: y
 
   - title: "Securing Federated Learning Against Novel and Classic Backdoor Threats During Foundation Model Integration"
     authors: "Xiaohuan Bi, <b>Xi Li</b>"
     venue: "IEEE IRI 2025"
-    paper_pdf: "/assets/publications/2025_IRI_FMFL_backdoor_defense/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2410.17573"
     selected: n
 
   - title: "Position Paper: Assessing Robustness, Privacy, and Fairness in Federated Learning Integrated with Foundation Models"
     authors: "<b>Xi Li</b>, Jiaqi Wang"
     venue: "Under review"
-    paper_pdf: "/assets/publications/2024_arXiv_FMFL_position_paper/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2402.01857"
     selected: y
 
   - title: "CEPA: Consensus Embedded Perturbation for Agnostic Detection and Inversion of Backdoors"
@@ -51,26 +63,26 @@ papers:
   - title: "Foundation Models in Federated Learning: Assessing Backdoor Vulnerabilities"
     authors: "<b>Xi Li</b>, Chen Wu, Jiaqi Wang"
     venue: "IJCNN, 2025"
-    paper_pdf: "/assets/publications/2025_IJCNN_FMFL_BD/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2401.10375"
     selected: y
 
-  - title: "Backdoor Mitigation by Correcting Distribution of Neural Activation"
+  - title: "Correcting the distribution of batch normalization signals for Trojan mitigation"
     authors: "<b>Xi Li</b>, Zhen Xiang, David Miller, George Kesidis"
     venue: "Neurocomputing, 2024"
-    paper_pdf: "/assets/publications/2024_Neurocomputing_backdoor_mitigation/paper.pdf"
+    paper_pdf: "https://www.sciencedirect.com/science/article/pii/S0925231224015236"
     selected: y
 
   - title: "BIC-based Mixture Model Defense against Data Poisoning Attacks on Classifiers: A Comprehensive Study"
     authors: "<b>Xi Li</b>, David Miller, Zhen Xiang, George Kesidis"
     venue: "IEEE Transactions on Knowledge and Data Engineering (TKDE), 2024"
-    paper_pdf: "/assets/publications/2024_TKDE_BIC_defense/paper.pdf"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10433691"
     code: "https://github.com/lixi1994/BIC-MMD"
     selected: y
 
   - title: "Unveiling Backdoor Risks Brought by Foundation Models in Heterogeneous Federated Learning"
     authors: "<b>Xi Li</b>, Chen Wu, Jiaqi Wang"
     venue: "PAKDD, 2024"
-    paper_pdf: "/assets/publications/2024_PAKDD_HFL_backdoor/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2311.18350"
     poster: "/assets/publications/2024_PAKDD_HFL_backdoor/poster.pdf"
     code: "https://github.com/lixi1994/backdoor_FM_hete_FL"
     selected: n
@@ -78,7 +90,7 @@ papers:
   - title: "Temporal-Distributed Backdoor Attack Against Video-Based Action Recognition"
     authors: "<b>Xi Li</b>, Songhe Wang, Ruiquan Huang, Mahanth Gowda, George Kesidis"
     venue: "AAAI, 2024"
-    paper_pdf: "/assets/publications/2024_AAAI_video_backdoor/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2308.11070"
     poster: "/assets/publications/2024_AAAI_video_backdoor/poster.pdf"
     code: "https://github.com/lixi1994/Temporal-Distributed-Backdoor-Attack-Against-Video-Based-Action-Recognition"
     selected: y
@@ -86,7 +98,7 @@ papers:
   - title: "Backdoor Threats from Compromised Foundation Models to Federated Learning"
     authors: "<b>Xi Li</b>, Songhe Wang, Chen Wu, Hao Zhou, Jiaqi Wang"
     venue: "FL@FM-NeurIPS'23"
-    paper_pdf: "/assets/publications/2023_NeurIPS_FMFL_backdoor/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2311.00144"
     poster: "/assets/publications/2023_NeurIPS_FMFL_backdoor/poster.pdf"
     code: "https://github.com/lixi1994/backdoor_FM_FL"
     selected: y
@@ -94,25 +106,25 @@ papers:
   - title: "A BIC-based Mixture Model Defense against Data Poisoning Attacks on Classifiers"
     authors: "<b>Xi Li</b>, David Miller, Zhen Xiang, George Kesidis"
     venue: "MLSP, 2023"
-    paper_pdf: "/assets/publications/2023_MLSP_BIC_defense/paper.pdf"
+    # paper_pdf: "/assets/publications/2023_MLSP_BIC_defense/paper.pdf"
     selected: n
 
   - title: "Test-Time Detection of Backdoor Triggers of Poisoned Deep Neural Networks"
     authors: "<b>Xi Li</b>, David Miller, Zhen Xiang, George Kesidis"
     venue: "ICASSP, 2022"
-    paper_pdf: "/assets/publications/2022_ICASSP_test_time_backdoor_dection/paper.pdf"
+    paper_pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9746573"
     poster: "/assets/publications/2022_ICASSP_test_time_backdoor_dection/poster.pdf"
     selected: y
 
   - title: "Detecting Backdoor Attacks Against Point Cloud Classifiers"
     authors: "Zhen Xiang, David Miller, Siheng Chen, <b>Xi Li</b>, George Kesidis"
     venue: "ICASSP, 2022"
-    paper_pdf: "/assets/publications/2022_ICASSP_pointcloud_backdoor_dection/paper.pdf"
+    paper_pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9747194"
     selected: n
 
   - title: "A Backdoor Attack against 3D Point Cloud Classifiers"
     authors: "Zhen Xiang, David Miller, Siheng Chen, <b>Xi Li</b>, George Kesidis"
     venue: "ICCV, 2021"
-    paper_pdf: "/assets/publications/2021_ICCV_pointcloud_backdoor/paper.pdf"
-    selected: y
+    paper_pdf: "https://ieeexplore.ieee.org/document/9711497"
+    selected: n
 
