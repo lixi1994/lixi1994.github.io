@@ -54,9 +54,9 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2402.01857"
     selected: y
 
-  - title: "CEPA: Consensus Embedded Perturbation for Agnostic Detection and Inversion of Backdoors"
+  - title: "Backdoor Inversion in Neural-Activation Space"
     authors: "Guangmingmei Yang, <b>Xi Li</b>, Hang Wang, David Miller, George Kesidis"
-    venue: "Under review"
+    venue: "MLSP, 2025"
     # paper_pdf: "/assets/publications/2024_arXiv_CEPA/paper.pdf"
     selected: n
 
