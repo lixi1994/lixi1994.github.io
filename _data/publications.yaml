@@ -38,7 +38,7 @@ papers:
 
   - title: "PeerGuard: Defending Multi-Agent Systems Against Backdoor Attacks Through Mutual Reasoning"
     authors: "Falong Fan, <b>Xi Li</b>"
-    venue: "IEEE IRI 2025"
+    venue: "<b>Best Paper Award</b>, IEEE IRI 2025"
     paper_pdf: "https://arxiv.org/abs/2505.11642"
     selected: y
 
