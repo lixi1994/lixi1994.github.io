@@ -1,4 +1,11 @@
 papers:
+  - title: "Survey on Neural Network Parameter Acquisition: from Optimization to Generation"
+    authors: "Jiaqi Wang, Yusen Zhang, <b>Xi Li</b>, Simeng Han, Zining Zhu, Lingjuan Lyu, Yaqing Wang, Ruiquan Huang, Arman Cohan, Rui Zhang, Sheng Li, Xin (Eric) Wang."
+    # venue: "Under review"
+    # paper_pdf: "https://arxiv.org/abs/2505.12470"
+    # selected: y
+    label: P
+
   - title: "Rethinking the Safety Landscape for Foundation Models: A Multi-Modal Perspective"
     authors: "<b>Xi Li</b>, Shu Zhao, Fei Zhao, Runlong Yu"
     venue: "ICCV 2025 T2FM Workshop"
