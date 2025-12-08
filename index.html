@@ -20,7 +20,7 @@ title: Home
   </ul>
 
   <p>
-    Check my resume <a href="assets/cv/XiLi.pdf" target="_blank">here</a> (Last updated: Oct. 2025).
+    Check my resume <a href="assets/cv/XiLi.pdf" target="_blank">here</a> (Last updated: Dec. 2025).
   </p>
 
 </div>
@@ -33,14 +33,9 @@ title: Home
   <!-- <sup>‡</sup> indicates equal contribution. -->
   <!-- </p> -->
 
-  <!-- <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
-  </ul> -->
-
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#tab-tutorial">Tutorial</div></li>
-    <li><div class="button" data-ref="#tab-conference">Conference</div></li>
+    <!-- <li><div class="button active" data-ref="#tab-tutorial">Tutorial</div></li> -->
+    <li><div class="button active" data-ref="#tab-conference">Conference</div></li>
     <li><div class="button" data-ref="#tab-journal">Journal</div></li>
     <li><div class="button" data-ref="#tab-workshop">Workshop</div></li>
     <li><div class="button" data-ref="#tab-preprint">Pre-prints</div></li>
@@ -49,6 +44,7 @@ title: Home
   <div class="tab-content">
     
     <!-- Tutorial -->
+    <!-- 
     <div id="tab-tutorial" class="tab-content tab-pane active">
       {% assign tutorial_papers = site.data.publications.papers | where: "label", "T" %}
       {% for paper in tutorial_papers %}
@@ -81,10 +77,11 @@ title: Home
           </div>
         </div>
       {% endfor %}
-    </div>
+    </div> 
+    -->
 
     <!-- Conference -->
-    <div id="tab-conference" class="tab-content tab-pane">
+    <div id="tab-conference" class="tab-content tab-pane active">
       {% assign conference_papers = site.data.publications.papers | where: "label", "C" %}
       {% for paper in conference_papers %}
         <div class="paper">
@@ -226,12 +223,35 @@ title: Home
   </div>
 </div>
 
-<!-- ========== Awards and News ========== -->
+
+<!-- ========== Scholarly Activities & Highlights ========== -->
 <div class="docs-section" id="highlights">
-  <h4>Highlights</h4>
+  <h4>Scholarly Activities & Highlights</h4>
   <ul style="list-style-position: inside; margin-left: 20px;">
+
+    <!-- Tutorials -->
+    <li>
+      <strong>🗣️ Tutorial Organizer</strong>, 
+      “Towards Safe Multi-Modal Learning: Unique Challenges and Future Directions,” ICCV 2025 –   
+      <a href="https://sites.google.com/view/safe-multi-modal-learning/home" target="_blank">website</a> |
+      <a href="https://drive.google.com/file/d/1dT8OUzAeanYQWxFqa1Au28Sucj4l9WjH/view?usp=sharing" target="_blank">slides</a>
+    </li>
+
+    <li>
+      <strong>🗣️ Tutorial Organizer</strong>, 
+      “Exploitation & Mitigation: Understanding Large-Scale ML Robustness,” SDM 2025 –     
+       <a href="/assets/publications/2025_SDM_tutorial/slides.pdf" target="_blank">slides</a>
+    </li>
+
+    <!-- Awards -->
     <li><strong>🏆 Best Paper Award</strong> – IEEE IRI 2025</li>
-    <li>📷 Featured in <strong>UAB News</strong> for research on AI safety – <a href="https://www.uab.edu/news/people-of-uab/uab-professor-builds-user-friendly-tool-to-spot-hidden-ai-security-threats" target="_blank">Read more</a></li>
+
+    <!-- News -->
+    <li>📷 Featured in <strong>UAB News</strong> for research on AI safety – 
+      <a href="https://www.uab.edu/news/people-of-uab/uab-professor-builds-user-friendly-tool-to-spot-hidden-ai-security-threats" 
+         target="_blank">Read more</a>
+    </li>
+
   </ul>
 </div>
 
@@ -240,14 +260,15 @@ title: Home
 <div class="docs-section" id="teaching">
   <h4>Teaching</h4>
   <!-- Instructor Experience -->
-  <p><strong>Instructor</strong> <span style="float: right;">UAB</span><br/></p>
+  <p><strong>Instructor</strong> <span style="float: right;"><strong>UAB</strong></span><br/></p>
   <ul style="list-style-position: inside; margin-left: 20px;">
-    <li><a href="{{ '/assets/teaching/C++.html' | prepend: site.baseurl }}" target="_blank">CS300/500 Advanced OO Programming in C++</a><span style="float: right;">2025 Fall</span><br/></li>
-    <li><a href="{{ '/assets/teaching/Algo.html' | prepend: site.baseurl }}" target="_blank">CS652/752 Advanced Algorithms and Applications</a><span style="float: right;">2025 Spring</span><br/></li>
+    <!-- <li><a href="{{ '/assets/teaching/C++.html' | prepend: site.baseurl }}" target="_blank">CS300/500 Advanced OO Programming in C++</a><span style="float: right;">2025 Fall</span><br/></li> -->
+    <li>CS300/500 Advanced OO Programming in C++</a><span style="float: right;">2025 Fall</span><br/></li>
+    <li><a href="{{ '/assets/teaching/Algo.html' | prepend: site.baseurl }}" target="_blank">CS652/752 Advanced Algorithms and Applications</a><span style="float: right;">2025-2026 Spring</span><br/></li>
     <li><a href="{{ '/assets/teaching/FDS.html' | prepend: site.baseurl }}" target="_blank">CS685/785 Foundation of Data Science</a><span style="float: right;">2024-2025 Fall</span></li>
   </ul>
   <!-- Teaching Assistant Experience -->
-  <p><strong>Teaching Assistant</strong> <span style="float: right;">PSU</span><br/></p>
+  <p><strong>Teaching Assistant</strong> <span style="float: right;"><strong>PSU</strong></span><br/></p>
   <ul style="list-style-position: inside; margin-left: 20px;">
     <li>CMPSC465 Data Structures and Algorithms <span style="float: right;">2021 Spring</span><br/></li>
     <li>CMPSC/MATH 451 Numerical Computations <span style="float: right;">2019 Fall - 2024 Spring</span><br/></li>
@@ -268,7 +289,21 @@ title: Home
       </ul>
     </div>
     <div>
-      <img src="assets/figure/uab_medicine_logo.jpg" alt="UAB Medicine Logo" style="height: 128px;">
+      <img src="assets/figure/uab_medicine_logo.png" alt="UAB Medicine Logo" style="height: 128px;">
+    </div>
+  </div>
+
+  <!-- ========== CSCH ========== -->
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+    <div>
+      <p><strong>Associate Scientist | 2025 - present</strong></p> 
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>Center for the Study of Community Health</li>
+        <li>The University of Alabama at Birmingham, School of Public Health</li>
+      </ul>
+    </div>
+    <div>
+      <img src="assets/figure/uab_public_health_logo.png" alt="UAB Public Health Logo" style="height: 128px;">
     </div>
   </div>
 
@@ -283,7 +318,7 @@ title: Home
       </ul>
     </div>
     <div>
-      <img src="assets/figure/meta_logo.webp" alt="Meta Logo" style="height: 88px;">
+      <img src="assets/figure/meta_logo.webp" alt="Meta Logo" style="height: 115px;">
     </div>
   </div>
 
@@ -304,11 +339,11 @@ title: Home
     </li>
 
     <li style="padding-left: 1.2em; text-indent: -1.2em;">
-      <strong>Conference Reviewer:</strong> ICCV 2025, ICML 2025, AISTATS 202-2026, ICLR 2025, CVPR 2024–2025, NeurIPS 2024-2025, ICASSP 2022–2025, COLM 2024, KDD 2023–2024
+      <strong>Conference Reviewer:</strong> ICCV 2025, ICML 2025, AISTATS 2025-2026, ICLR 2025-2026, CVPR 2024–2026, NeurIPS 2024-2025, ICASSP 2022–2025, COLM 2024, KDD 2023–2024
     </li>
 
     <li style="padding-left: 1.2em; text-indent: -1.2em;">
-      <strong>Journal Reviewer:</strong> Neurocomputing 2025, Computers & Security (C&S) 2024, IEEE TCSVT 2024
+      <strong>Journal Reviewer:</strong> IEEE Transactions on Neural Networks and Learning Systems (TNNLS), Neurocomputing, Neural Networks, Computers & Security (C&S), IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
     </li>
 
     <li style="padding-left: 1.2em; text-indent: -1.2em;">
@@ -318,95 +353,3 @@ title: Home
 
 </div>
 
-
-
-
-<!-- ========== PROJECTS ========== 
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
--->
-
-
-<!-- <div class="docs-section" id="template">
-  <h4>Website Design</h4>
-  Since I made this website, many people have found this Jekyll template useful [
-  {% for template_user in site.data.template_users.template_users %}
-  <a href="{{ template_user }}" target="_blank">{{ forloop.index }}</a>{% if forloop.last %}{% else %},{% endif %}
-  {% endfor %}
-  ].
-  You can find all the code needed to build your website in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
-  Feel free to use it. <br/>
-
-  If you end up using it, please link to here and drop me an email.
-  I'm always happy to see people using it.
-</div>   -->
