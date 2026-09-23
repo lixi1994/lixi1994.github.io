@@ -3,7 +3,7 @@ h4 {
   color: #2982ac; 
   font-weight: 500;}
 .container {
-  max-width: 800px; }
+  max-width: 1000px; }
 .header {
   margin-top: 60px;
   margin-bottom: 60px; 
@@ -15,6 +15,8 @@ h4 {
 .main-description .fa {
   font-size: 22px;
   margin-top: 5px; }
+.bio-intro {
+  margin-bottom: 1rem; }
 .paper {
   margin-bottom: 20px }
 .paper .title {
@@ -81,6 +83,10 @@ h4 {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .container {
+    width: 92%;
+  }
+
   /* Navbar */
 .navbar + .docs-section {
   border-top-width: 0;
@@ -113,23 +119,28 @@ h4 {
 .navbar-list {
   list-style: none;
   display: flex; /* Use flexbox for centering */
-  gap: 35px; /* Space between items */
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: clamp(6px, 1vw, 18px); /* Keep all navigation items on one line */
   padding: 0;
   margin: 0;
 }
 
 .navbar-item {
+  flex: 0 0 auto;
   margin: 0;
 }
 
 .navbar-link {
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: .2rem;
+  letter-spacing: .08rem;
   text-decoration: none;
   line-height: 6.5rem;
   color: #222;
+  white-space: nowrap;
 }
 
 .navbar-link.active {
@@ -148,7 +159,7 @@ h4 {
 
 /* Adjust the width of the container for docked nav */
 .has-docked-nav .navbar > .container {
-  width: 80%;
+  width: 92%;
 }
 
   /* Popover */
@@ -219,4 +230,3 @@ h4 {
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
-

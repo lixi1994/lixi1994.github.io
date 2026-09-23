@@ -28,33 +28,29 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
   <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}?v=20260920">
 
   <style>
 
     /* Custom styles for the navbar */
     .navbar-link {
-      font-size: 14px; 
-      font-family: "Times New Roman", Times, serif;
+      font-size: 14px;
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
       /* font-weight: 500;  */
     }
 
     /* Custom styles for the header */
     h1, h2, h3, h4 {
-      font-family: "Times New Roman", Times, serif;
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
     }
 
     /* Custom styles for the body */
     body, p, li, a, span, div {
-    font-family: 'Raleway', sans-serif;
+    font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
     font-size: 17px;
   }
   </style>
@@ -95,21 +91,21 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+  <div class="navbar-spacer"></div>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-list">
+        <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#about" | prepend: site.baseurl }}>About</a></li> -->
+        <li class="navbar-item"><a class="navbar-link" href={{ "/index.html" | prepend: site.baseurl }}>Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{ '/assets/lab/lab.html' | prepend: site.baseurl }}">TrustBrew Lab</a></li>
+        <li class="navbar-item"><a class="navbar-link" href={{ "/assets/lab/lab.html#research" | prepend: site.baseurl }}>Research</a></li>
+        <li class="navbar-item"><a class="navbar-link" href={{ "/assets/lab/lab.html#people" | prepend: site.baseurl }}>People</a></li>
+        <li class="navbar-item"><a class="navbar-link" href={{ "/assets/lab/lab.html#advice" | prepend: site.baseurl }}>A PhD Is a Marathon</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#about" | prepend: site.baseurl }}>About</a></li> -->
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html" | prepend: site.baseurl }}>Home</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="{{ '/assets/lab/lab.html' | prepend: site.baseurl }}">TrustBrew Lab</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/assets/lab/lab.html#people" | prepend: site.baseurl }}>People</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/assets/lab/lab.html#research" | prepend: site.baseurl }}>Research</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/assets/lab/lab.html#advice" | prepend: site.baseurl }}>A PhD Is a Marathon</a></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="container">
 
     {{ content}}
 
@@ -137,10 +133,6 @@
             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
           </span>
   
-          <!-- GitHub Icon -->
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer;">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
         </div>
       </div>
     </div>

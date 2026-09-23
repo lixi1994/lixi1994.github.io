@@ -28,33 +28,29 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
   <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}?v=20260920">
 
   <style>
 
     /* Custom styles for the navbar */
     .navbar-link {
-      font-size: 14px; 
-      font-family: "Times New Roman", Times, serif;
+      font-size: 14px;
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
       /* font-weight: 500;  */
     }
 
     /* Custom styles for the header */
     h1, h2, h3, h4 {
-      font-family: "Times New Roman", Times, serif;
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
     }
 
     /* Custom styles for the body */
     body, p, li, a, span, div {
-    font-family: 'Raleway', sans-serif;
+    font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
     font-size: 17px;
   }
   </style>
@@ -95,25 +91,26 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">  
+  <div class="navbar-spacer"></div>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-list">
+        <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#about" | prepend: site.baseurl }}>About</a></li> -->
+        <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{ '/assets/lab/lab.html' | prepend: site.baseurl }}">TrustBrew Lab</a></li>
+        <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
+        <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#grants-awards" | prepend: site.baseurl }}>Grants &amp; Awards</a></li>
+        <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#students" | prepend: site.baseurl }}>Students</a></li> -->
+        <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#teaching" | prepend: site.baseurl }}>Teaching</a></li>
+        <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#experience" | prepend: site.baseurl }}>Experience</a></li>
+        <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#service" | prepend: site.baseurl }}>Service</a></li>
+        <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>-->
+        <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li> -->
+      </ul>
+    </div>
+  </nav>
 
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#about" | prepend: site.baseurl }}>About</a></li> -->
-           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="{{ '/assets/lab/lab.html' | prepend: site.baseurl }}">TrustBrew Lab</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
-          <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#students" | prepend: site.baseurl }}>Students</a></li> -->
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#teaching" | prepend: site.baseurl }}>Teaching</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#experience" | prepend: site.baseurl }}>Experience</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#service" | prepend: site.baseurl }}>Service</a></li>
-          <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>-->
-          <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li> -->
-        </ul>
-      </div>
-    </nav>
+  <div class="container">
 
     <section class="header">
       <div class="row">
@@ -129,6 +126,8 @@
           <h1>{{ site.data.main_info.name }}</h1>
           <p>{{ site.data.main_info.pronouns }}</p>
           <p>{{ site.data.main_info.title }}</p>
+          <p>{{ site.data.main_info.title_and_affiliation }}</p>
+          <p>{{ site.data.main_info.department }}</p>
           <p>{{ site.data.main_info.affiliation }}</p>
           
           <!-- Icons for Contact Information -->
@@ -148,11 +147,6 @@
               <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </span>
     
-            <!-- GitHub Icon -->
-            <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer;" title="GitHub Profile">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </span>
-
             <!-- Resume Icon -->
             <span onclick="window.open('{{ site.baseurl }}/assets/cv/XiLi.pdf')" style="cursor: pointer;" title="View my resume">
               <i class="fa fa-file-text" aria-hidden="true"></i>
@@ -188,10 +182,6 @@
             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
           </span>
   
-          <!-- GitHub Icon -->
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer;">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
         </div>
       </div>
     </div>
