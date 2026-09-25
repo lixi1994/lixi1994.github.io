@@ -1,4 +1,24 @@
 papers:
+  - title: "One Prompt across Modalities: Unified Robustness and Safety Adaptation for Vision-Language Models."
+    authors: "Shirong Kou, Shu Zhao, Cheng Han, Zhuowen Tu, <b>Xi Li</b>"
+    venue: "Under review, 2026"
+    label: P
+
+  - title: "No Visit Is Removable: A Counterfactually Certified Benchmark for Multi-Visit Chest-Radiograph Reasoning."
+    authors: "Falong Fan, Qizhen Lan, Xiangchen Li, <b>Xi Li</b>, Miaomiao Zhang, Xiaoqian Jiang"
+    venue: "Under review, 2026"
+    label: P
+
+  - title: "ParaGen-Bench: A Benchmark for Neural Network Parameter Generation."
+    authors: "Chenjia Li, Ruiquan Huang, Yusen Zhang, Lingjuan Lyu, <b>Xi Li</b>, Jiaqi Wang"
+    venue: "Under review, 2026"
+    label: P
+
+  - title: "SaRA: Sink-aware Representation Allocation for Restoring Visual Semantics in Multimodal LLMs."
+    authors: "Huan Ma, Yiyang Liu, James Chenhao Liang, Qihao Ye, Chole Lou, <b>Xi Li</b>, Dongfang Liu, Qifan Wang, Tianyang Wang, Cheng Han"
+    venue: "Under review, 2026"
+    label: P
+
   - title: "Evolving Safety Landscape of Multi-modal Large Language Models: A Survey of Emerging Threats and Safeguards"
     authors: "<b>Xi Li</b>, Shu Zhao, Xiaohan Zou, Fei Zhao, Fuxiao Liu, Yusen Zhang, Cheng Han, Yushun Dong, Jiaqi Wang"
     venue: "ICLR Workshop on Principled Design for Trustworthy AI, 2026"
@@ -6,7 +26,7 @@ papers:
 
   - title: "Adapting Vision Foundation Models with Cascaded Semantics"
     authors: "Xi Xiao, Xingjian Li, Cheng Han, Tianyang Wang, Lin Zhao, Yunbei Zhang, Guosheng Hu, Runmin Jiang, <b>Xi Li</b>, Xiao Wang, Min Xu"
-    venue: "Transactions on Machine Learning Research (TMLR) 2026"
+    venue: "Transactions on Machine Learning Research (TMLR), 2026"
     label: J
 
   - title: "Benchmarking LLM-Assisted Blue Teaming via Standardized Threat Hunting"
@@ -16,33 +36,33 @@ papers:
 
   - title: "Survey on Neural Network Parameter Acquisition: from Optimization to Generation"
     authors: "Jiaqi Wang, Yusen Zhang, <b>Xi Li</b>, Simeng Han, Zining Zhu, Lingjuan Lyu, Yaqing Wang, Ruiquan Huang, Arman Cohan, Rui Zhang, Sheng Li, Xin (Eric) Wang."
-    # venue: "Under review"
+    venue: "Under review, 2025"
     # paper_pdf: "https://arxiv.org/abs/2505.12470"
     # selected: y
     label: P
 
   - title: "Rethinking the Safety Landscape for Foundation Models: A Multi-Modal Perspective"
     authors: "<b>Xi Li</b>, Shu Zhao, Fei Zhao, Runlong Yu"
-    venue: "ICCV 2025 T2FM Workshop"
+    venue: "ICCV T2FM Workshop, 2025"
     paper_pdf: "/assets/publications/2025_ICCV_T2FM/paper.pdf"
     # selected: y
     label: W
 
-  - title: "Towards Safe Multi-Modal Learning: Unique Challenges and Future Directions"
-    authors: "<b>Xi Li</b>, Manling Li, Muchao Ye"
-    venue: "ICCV Tutorial, 2025"
-    paper_pdf: "/assets/publications/2025_ICCV_tutorial/paper.pdf"
-    website: "https://sites.google.com/view/safe-multi-modal-learning/home"
-    # selected: y
-    label: T
+  # - title: "Towards Safe Multi-Modal Learning: Unique Challenges and Future Directions"
+  #   authors: "<b>Xi Li</b>, Manling Li, Muchao Ye"
+  #   venue: "ICCV Tutorial, 2025"
+  #   paper_pdf: "/assets/publications/2025_ICCV_tutorial/paper.pdf"
+  #   website: "https://sites.google.com/view/safe-multi-modal-learning/home"
+  #   # selected: y
+  #   label: T
 
-  - title: "Exploitation and Mitigation: Understanding Large-Scale Machine Learning Robustness under Paradigm Shift"
-    authors: "<b>Xi Li</b>, Ruixiang Tang, Muchao Ye"
-    venue: "SDM Tutorial, 2025"
-    paper_pdf: "/assets/publications/2025_SDM_tutorial/paper.pdf"
-    slides: "/assets/publications/2025_SDM_tutorial/slides.pdf"
-    # selected: y
-    label: T
+  # - title: "Exploitation and Mitigation: Understanding Large-Scale Machine Learning Robustness under Paradigm Shift"
+  #   authors: "<b>Xi Li</b>, Ruixiang Tang, Muchao Ye"
+  #   venue: "SDM Tutorial, 2025"
+  #   paper_pdf: "/assets/publications/2025_SDM_tutorial/paper.pdf"
+  #   slides: "/assets/publications/2025_SDM_tutorial/slides.pdf"
+  #   # selected: y
+  #   label: T
 
   - title: "Chain-of-Scrutiny: Detecting Backdoor Attacks for Large Language Models"
     authors: "<b>Xi Li</b>, Ruofan Mao, Yusen Zhang, Renze Lou, Chen Wu, Jiaqi Wang"
@@ -89,7 +109,7 @@ papers:
 
   - title: "Position Paper: Assessing Robustness, Privacy, and Fairness in Federated Learning Integrated with Foundation Models"
     authors: "<b>Xi Li</b>, Jiaqi Wang"
-    venue: "ICCV 2025 T2FM Workshop"
+    venue: "ICCV T2FM Workshop, 2025"
     paper_pdf: "https://arxiv.org/abs/2402.01857"
     # selected: y
     label: W
@@ -143,7 +163,7 @@ papers:
 
   - title: "Backdoor Threats from Compromised Foundation Models to Federated Learning"
     authors: "<b>Xi Li</b>, Songhe Wang, Chen Wu, Hao Zhou, Jiaqi Wang"
-    venue: "FL@FM-NeurIPS'23"
+    venue: "FL@FM-NeurIPS, 2023"
     paper_pdf: "https://arxiv.org/abs/2311.00144"
     poster: "/assets/publications/2023_NeurIPS_FMFL_backdoor/poster.pdf"
     code: "https://github.com/lixi1994/backdoor_FM_FL"

@@ -29,13 +29,48 @@ title: Home
 
   <ul class="tab-nav">
     <!-- <li><div class="button active" data-ref="#tab-tutorial">Tutorial</div></li> -->
-    <li><div class="button active" data-ref="#tab-conference">Conference</div></li>
+    <li><div class="button active" data-ref="#tab-all">All</div></li>
+    <li><div class="button" data-ref="#tab-conference">Conference</div></li>
     <li><div class="button" data-ref="#tab-journal">Journal</div></li>
     <li><div class="button" data-ref="#tab-workshop">Workshop</div></li>
     <li><div class="button" data-ref="#tab-preprint">Pre-prints</div></li>
   </ul>
 
   <div class="tab-content">
+
+    <!-- All Publications -->
+    <div id="tab-all" class="tab-content tab-pane active">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+          <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+            {% if paper.website %}
+              <a class="button" href="{{ paper.website }}" target="_blank">Website</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
     
     <!-- Tutorial -->
     <!-- 
@@ -75,7 +110,7 @@ title: Home
     -->
 
     <!-- Conference -->
-    <div id="tab-conference" class="tab-content tab-pane active">
+    <div id="tab-conference" class="tab-content tab-pane">
       {% assign conference_papers = site.data.publications.papers | where: "label", "C" %}
       {% for paper in conference_papers %}
         <div class="paper">
