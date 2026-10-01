@@ -2,56 +2,150 @@
 layout: lab_default
 title: TrustBrew Lab
 ---
+<style>
+  .lab-intro {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .lab-intro-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .lab-intro-logo {
+    flex: 0 0 240px;
+  }
+
+  .lab-intro-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .research-direction {
+    margin-bottom: 2rem;
+  }
+
+  .selected-publications {
+    margin-top: 0.6rem;
+  }
+
+  .selected-publications p {
+    margin-bottom: 0.3rem;
+  }
+
+  .selected-publications ul {
+    margin: 0 0 0 2rem;
+  }
+
+  @media (max-width: 549px) {
+    .lab-intro {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    .lab-intro-logo {
+      flex-basis: auto;
+      width: 200px;
+      align-self: center;
+    }
+  }
+</style>
 
 <!-- ========== About Lab ========== -->
-<div class="docs-section" id="about-lab">  
-  <h4>TrustBrew Lab ☕️</h4>
-
-  <p>
-  We focus on developing trustworthy and socially responsible AI systems.
-  Our research spans the robustness, security, safety, and interpretability of AI systems,
-  from traditional deep neural networks to modern large language models (LLMs),
-  multimodal LLMs, and AI agents.
-  We also explore interdisciplinary applications of trustworthy AI in critical domains,
-  including healthcare, sustainable infrastructure, and cybersecurity.
-  </p>
+<div class="docs-section" id="about-lab">
+  <div class="lab-intro">
+    <div class="lab-intro-text">
+      <h4>TrustBrew Lab ☕️</h4>
+      <p>
+        We focus on developing trustworthy and socially responsible AI systems.
+        Our research spans the robustness, security, safety, and interpretability of AI systems,
+        from traditional deep neural networks to modern large language models (LLMs),
+        multimodal LLMs, and AI agents.
+        We also explore interdisciplinary applications of trustworthy AI in critical domains,
+        including healthcare, sustainable infrastructure, and cybersecurity.
+      </p>
+    </div>
+    <div class="lab-intro-logo">
+      <img src="{{ '/assets/figure/lab_logo.png' | prepend: site.baseurl }}"
+           alt="TrustBrew Lab logo">
+    </div>
+  </div>
 </div>
 
 <!-- ========== Research ========== -->
 <div class="docs-section" id="research">
 
-<h4 style="margin-top: 24px; margin-bottom: 8px;">Research Directions</h4>
+<h4>Research</h4>
+<h5>Research Directions</h5>
 
 <ul style="margin-left: 30px; line-height: 1.6; list-style-position: outside;">
 
-  <li style="margin-bottom: 10px;">
+  <li class="research-direction">
     <strong>Safety and Security of LLMs and Multimodal AI</strong>
     <div>
-      We study adversarial attacks, jailbreaks, and multimodal safety failures, and develop methods for failure discovery, robust learning, and proactive safeguards.
+      We study adversarial attacks, poisoning attacks, jailbreaks, and multimodal safety failures, and develop methods for failure discovery, robust learning, and proactive safeguards.
     </div>
+    <!-- <div class="selected-publications">
+      <p><em>Selected Publications</em></p>
+      <ul>
+        <li><em>Representative publication to be added.</em></li>
+      </ul>
+    </div> -->
   </li>
 
-  <li style="margin-bottom: 10px;">
+  <li class="research-direction">
     <strong>Trustworthy AI for Time-Series and Health Data</strong>
     <div>
       We develop reliable learning methods for temporal, physiological, and longitudinal data, with applications in digital health, healthcare, and digital twins.
     </div>
+    <!-- <div class="selected-publications">
+      <p><em>Selected Publications</em></p>
+      <ul>
+        <li><em>Representative publication to be added.</em></li>
+      </ul>
+    </div> -->
   </li>
 
-  <li style="margin-bottom: 10px;">
+  <li class="research-direction">
     <strong>Reliable Agentic and Multimodal Reasoning</strong>
     <div>
       We study reliable reasoning and interaction with multimodal data, external knowledge, and computational tools, including multi-agent and retrieval-augmented systems.
     </div>
+    <!-- <div class="selected-publications">
+      <p><em>Selected Publications</em></p>
+      <ul>
+        <li><em>Representative publication to be added.</em></li>
+      </ul>
+    </div> -->
   </li>
 
-  <li style="margin-bottom: 10px;">
+  <li class="research-direction">
     <strong>AI for Security and Resilient Systems</strong>
     <div>
       We explore how AI can support vulnerability discovery, security analysis, and resilient decision-making in cybersecurity and critical infrastructure.
     </div>
+    <!-- <div class="selected-publications">
+      <p><em>Selected Publications</em></p>
+      <ul>
+        <li><em>Representative publication to be added.</em></li>
+      </ul>
+    </div> -->
   </li>
 
+</ul>
+
+<h5>Funded Projects</h5>
+<ul style="list-style-position: outside; margin-left: 20px; padding-left: 20px;">
+  <li>
+    <strong>Collaborative Research: Elements: AI-Agentic Digital Twin for Collaborative Building Auditing and Retrofit Simulation</strong><br>
+    <strong>NSF CSSI (2026–2029)</strong> <br>
+    This project develops an interactive platform that integrates agentic AI, digital twins, building data, and simulation to support collaborative building auditing and retrofit planning.
+    Our group investigates reliable multimodal information retrieval and reasoning for AI agents, enabling them to ground their decisions in heterogeneous building data and technical documents, reason across multiple sources, and produce accurate, traceable responses.
+  </li>
 </ul>
 
 </div>
@@ -61,34 +155,31 @@ title: TrustBrew Lab
 
   <h4>People</h4>
 
-    {% comment %}
     <!-- <h5>Principal Investigator</h5> -->
     <div style="display: flex; align-items: center; justify-content: space-between;">
         <div>
         <p><strong>Principal Investigator</strong></p>
             <ul style="list-style-position: inside; margin-left: 20px;">
-                <li><strong>Dr. Xi Li</strong>, Assistant Professor, CS@UAB</li>
+                <li><strong><a href="{{ '/index.html' | prepend: site.baseurl }}">Xi Li</a></strong>, Assistant Professor, CS@UAB</li>
             </ul>
         </div>
 
-        <div>
-        <img src="/assets/profile-pics/XiLi_bio.JPG" alt="XiLi" style="height: 138px;">
-        </div>
+        <!-- <div>
+        <img src="{{ '/assets/profile-pics/XiLi_bio.JPG' | prepend: site.baseurl }}" alt="Xi Li" style="height: 138px;">
+        </div> -->
     </div>
-    {% endcomment %}
 
     <!-- <h5>PhD Students</h5> -->
     <p><strong>PhD Students</strong></p>
     <ul style="list-style-position: inside; margin-left: 20px;">
-    <li><strong>Peiyuan Zhang</strong> – Fall 2025 – Present</li>
-    <li><strong>Shirong Kou</strong> – Fall 2025 – Present</li>
+    <li><strong><a href="https://www.linkedin.com/in/shirong-kou-link/" target="_blank" rel="noopener noreferrer">Shirong Kou</a></strong> – Fall 2025 – Present</li>
     </ul>
 
     <!-- <h5>Mentored Students</h5> -->
     <p><strong>Mentored Students</strong></p>
     <ul style="list-style-position: inside; margin-left: 20px;">
     <li><strong>Xiaohuan Bi</strong> – Undergraduate at Renmin University of China</li>
-    <li><strong>Falong Fan</strong> – M.S. from The Chinese University of Hong Kong, Shenzhen</li>
+    <li><strong><a href="https://falongfan.github.io/" target="_blank" rel="noopener noreferrer">Falong Fan</a></strong> – M.S. from The Chinese University of Hong Kong, Shenzhen</li>
     <li><strong>Ruofan Mao</strong> – Master's student at UAB</li>
     </ul>
 
@@ -115,7 +206,7 @@ title: TrustBrew Lab
   <a href="https://www.nsf.gov/" target="_blank" rel="noopener noreferrer">
     <img src="{{ '/assets/figure/NSF_logo.png' | prepend: site.baseurl }}"
          alt="U.S. National Science Foundation"
-         style="width: 180px; height: auto;">
+         style="width: 240px; max-width: 100%; height: auto;">
   </a>
 </div>
 
