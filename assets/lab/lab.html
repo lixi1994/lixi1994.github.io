@@ -24,6 +24,46 @@ title: TrustBrew Lab
     height: auto;
   }
 
+  .lab-title {
+    font-family: Consolas, monospace;
+    font-size: 3rem;
+    line-height: 1.35;
+    font-weight: 550;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .lab-title span {
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .people-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 1rem 0 2.5rem;
+  }
+
+  .person-card {
+    width: 160px;
+    text-align: center;
+  }
+
+  .person-card img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+  }
+
+  .person-card-name,
+  .person-card-role,
+  .person-card-year {
+    margin-bottom: 0.2rem;
+  }
+
   .research-direction {
     margin-bottom: 2rem;
   }
@@ -59,7 +99,7 @@ title: TrustBrew Lab
 <div class="docs-section" id="about-lab">
   <div class="lab-intro">
     <div class="lab-intro-text">
-      <h4>TrustBrew Lab ☕️</h4>
+      <div class="lab-title"><span style="color: #1e5e7c;">Trust</span><span style="color: #653a1a;">Brew</span> <span style="color: #000;">Lab</span> ☕️</div>
       <p>
         We focus on developing trustworthy and socially responsible AI systems.
         Our research spans the robustness, security, safety, and interpretability of AI systems,
@@ -155,25 +195,23 @@ title: TrustBrew Lab
 
   <h4>People</h4>
 
-    <!-- <h5>Principal Investigator</h5> -->
-    <div style="display: flex; align-items: center; justify-content: space-between;">
-        <div>
-        <p><strong>Principal Investigator</strong></p>
-            <ul style="list-style-position: inside; margin-left: 20px;">
-                <li><strong><a href="{{ '/index.html' | prepend: site.baseurl }}">Xi Li</a></strong>, Assistant Professor, CS@UAB</li>
-            </ul>
-        </div>
-
-        <!-- <div>
-        <img src="{{ '/assets/profile-pics/XiLi_bio.JPG' | prepend: site.baseurl }}" alt="Xi Li" style="height: 138px;">
-        </div> -->
+    <div class="people-grid">
+      <div class="person-card">
+        <a href="{{ '/index.html' | prepend: site.baseurl }}">
+          <img src="{{ '/assets/profile-pics/XiLi_bio.JPG' | prepend: site.baseurl }}" alt="Xi Li">
+        </a>
+        <p class="person-card-name"><strong><a href="{{ '/index.html' | prepend: site.baseurl }}">Xi Li</a></strong></p>
+        <p class="person-card-role"><strong>Principal Investigator</strong></p>
+      </div>
+      <div class="person-card">
+        <a href="https://www.linkedin.com/in/shirong-kou-link/" target="_blank" rel="noopener noreferrer">
+          <img src="{{ '/assets/profile-pics/SKou.png' | prepend: site.baseurl }}" alt="Shirong Kou">
+        </a>
+        <p class="person-card-name"><strong><a href="https://www.linkedin.com/in/shirong-kou-link/" target="_blank" rel="noopener noreferrer">Shirong Kou</a></strong></p>
+        <p class="person-card-role"><strong>PhD Student</strong></p>
+        <p class="person-card-year">Fall 2025 – Present</p>
+      </div>
     </div>
-
-    <!-- <h5>PhD Students</h5> -->
-    <p><strong>PhD Students</strong></p>
-    <ul style="list-style-position: inside; margin-left: 20px;">
-    <li><strong><a href="https://www.linkedin.com/in/shirong-kou-link/" target="_blank" rel="noopener noreferrer">Shirong Kou</a></strong> – Fall 2025 – Present</li>
-    </ul>
 
     <!-- <h5>Mentored Students</h5> -->
     <p><strong>Mentored Students</strong></p>
@@ -182,21 +220,6 @@ title: TrustBrew Lab
     <li><strong><a href="https://falongfan.github.io/" target="_blank" rel="noopener noreferrer">Falong Fan</a></strong> – M.S. from The Chinese University of Hong Kong, Shenzhen</li>
     <li><strong>Ruofan Mao</strong> – Master's student at UAB</li>
     </ul>
-
-    <!-- <h5>Join Us</h5> -->
-    <p><strong>Join Us 🙌</strong></p>
-    <p>
-    <s>
-    I’m looking for highly motivated PhD students to join my research group starting in Fall 2025 at CS@UAB. 
-    Please check the <a href="{{ '/assets/lab/recruitment_en.html' | prepend: site.baseurl }}" target="_blank">Recruitment</a> page for more details.  
-    If you are interested, apply to the  
-    <a href="https://www.uab.edu/cas/computerscience/graduate-programs/doctoral-program/doctoral-admissions" target="_blank">CS PhD program</a>  
-    and mention my name in your application.  
-    Additionally, send your CV and transcript to  
-    <a href="mailto:xili.recruitment@gmail.com">xili.recruitment@gmail.com</a>  
-    with the subject <b>[25Fall PhD Application]</b>.
-    </s>
-    </p>
 
 </div>
 
@@ -210,6 +233,24 @@ title: TrustBrew Lab
   </a>
 </div>
 
+<!-- ========== Join Us ========== -->
+<div class="docs-section" id="join-us">
+  <h4>Join Us 🙌</h4>
+  <p>
+    <s>
+      I’m looking for highly motivated PhD students to join my research group starting in Fall 2025 at CS@UAB.
+      Please check the <a href="{{ '/assets/lab/recruitment_en.html' | prepend: site.baseurl }}" target="_blank">Recruitment</a> page for more details.
+      If you are interested, apply to the
+      <a href="https://www.uab.edu/cas/computerscience/graduate-programs/doctoral-program/doctoral-admissions" target="_blank">CS PhD program</a>
+      and mention my name in your application.
+      Additionally, send your CV and transcript to
+      <a href="mailto:xili.recruitment@gmail.com">xili.recruitment@gmail.com</a>
+      with the subject <b>[25Fall PhD Application]</b>.
+    </s>
+  </p>
+</div>
+
+{% comment %}
 <div class="docs-section" id="advice">
   <h4>A PhD Is a Marathon</h4>
 
@@ -254,3 +295,4 @@ title: TrustBrew Lab
   </ul> -->
 
 </div>
+{% endcomment %}
